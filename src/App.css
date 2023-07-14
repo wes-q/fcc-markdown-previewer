@@ -1,8 +1,8 @@
 #editor {
   background-color: RGB(225, 111, 0);
   font-size: 1rem;
-  color: beige;
-  text-shadow: 2px 2px #ff0000;
+  color: rgb(255, 255, 255);
+  /* text-shadow: 2px 2px white; */
 
 }
 
@@ -36,19 +36,23 @@
   margin: 2rem auto;
 }
 
+#preview h1 {
+  border-bottom: 2px solid #224b4b;
+}
+#preview h2 {
+  border-bottom: 1px solid #224b4b;
+}
+
 .container-e {
   display: flex;
   padding: 20px;
   border: 5px solid RGB(225, 111, 0);
   justify-content: space-around;
   gap: 20px;
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .grow-item {
   flex: 1;
 }
 
-.divinside {
-  border: 1px solid black;
-}

@@ -11,8 +11,6 @@
   <script>
     document.getElementById('content').innerHTML =
       DOMPurify.sanitize(marked.parse('# Marked in the browser\n\nRendered by **marked**.'));
-    //   DOMPurify.sanitize(marked.parse(`<img src="x" onerror="alert('not happening')">`));
-
   </script>
 </body>
 </html>
