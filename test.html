@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Marked in the browser</title>
+</head>
+<body>
+  <div id="content"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/5.1.1/marked.min.js" integrity="sha512-geNSPsVaubOv19D7VZY9lJH7MNdRkIq84doaoubf6zknjXsyBQ77XQbqiHX89Mg3e+67E16huocEGUlR4Pgjtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.5/purify.min.js" integrity="sha512-KqUc2WMPF/gxte9xVjVE4TIt1LMUTidO3BrcItFg0Ro24I7pGNzgcXdnWdezNY+8T0/JEmdC79MuwYn+8UdOqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    document.getElementById('content').innerHTML =
+      DOMPurify.sanitize(marked.parse('# Marked in the browser\n\nRendered by **marked**.'));
+    //   DOMPurify.sanitize(marked.parse(`<img src="x" onerror="alert('not happening')">`));
+
+  </script>
+</body>
+</html>
